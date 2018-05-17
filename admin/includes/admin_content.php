@@ -10,10 +10,16 @@
 
             <?php
 
-                if($database->connection)
+                $query = "SELECT * FROM users";
+
+                $result = $database->query($query);
+                while($row = mysqli_fetch_array($result))
                 {
-                    echo "true";
+                    echo $username = $row['username'];
                 }
+
+
+
             
             ?>
 
