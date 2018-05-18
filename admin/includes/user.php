@@ -9,15 +9,18 @@ class User
         $result_set = $database->query("SELECT * FROM users");
 
         return $result_set;
+    }
 
-        // while($row = mysqli_fetch_array($result))
-        // {
-        //     $id         = $row['id'];
-        //     $username   = $row['username'];
-        //     $password   = $row['password'];
-        //     $firstname  = $row['firstname'];
-        //     $lastname   = $row['lastname'];
-        // }
+    public static function find_user_by_id($user_id)
+    {
+        global $database;
+
+        $result_set = $database->query("SELECT * FROM users WHERE id = {$user_id} LIMIT 1");
+        
+        $found_user = mysqli_fetch_array($result_set);
+
+        return $found_user;
+
     }
 }
 
