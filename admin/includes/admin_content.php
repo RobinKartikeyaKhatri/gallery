@@ -18,7 +18,18 @@
                 //     echo $username = $row['username'];
                 // }
 
+                $user = new User();
+                $result_set = $user->find_all_users();
                 
+                while($row = mysqli_fetch_array($result_set))
+                {
+                    echo $id         = $row['id'] . "<br/>";
+                    echo $username   = $row['username'] . "<br/>";
+                    echo $password   = $row['password'] . "<br/>";
+                    echo $first_name  = $row['first_name'] . "<br/>";
+                    echo $last_name   = $row['last_name'] . "<br/>";
+                }
+
 
 
 
