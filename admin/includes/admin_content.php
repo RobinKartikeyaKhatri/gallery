@@ -19,17 +19,20 @@
                 // }
 
                 
-                $result_set = User::find_all_users();
+                // $result_set = User::find_all_users();
                 
-                while($row = mysqli_fetch_array($result_set))
-                {
-                    echo $id         = $row['id'] . "<br/>";
-                    echo $username   = $row['username'] . "<br/>";
-                    echo $password   = $row['password'] . "<br/>";
-                    echo $first_name  = $row['first_name'] . "<br/>";
-                    echo $last_name   = $row['last_name'] . "<br/>";
-                }
+                // while($row = mysqli_fetch_array($result_set))
+                // {
+                //     echo $id         = $row['id'] . "<br/>";
+                //     echo $username   = $row['username'] . "<br/>";
+                //     echo $password   = $row['password'] . "<br/>";
+                //     echo $first_name  = $row['first_name'] . "<br/>";
+                //     echo $last_name   = $row['last_name'] . "<br/>";
+                // }
 
+                $user_found = User::find_user_by_id(1);
+                echo $user_found['username'];
+                
 
 
 
