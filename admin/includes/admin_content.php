@@ -31,12 +31,7 @@
                 // }
 
                 $user_found = User::find_user_by_id(1);
-                $user = new User();
-
-                echo $user->username = $user_found['username'];
-                echo $user->username = $user_found['password'];
-                echo $user->username = $user_found['first_name'];
-                echo $user->username = $user_found['last_name'];
+                
 
             
                 
