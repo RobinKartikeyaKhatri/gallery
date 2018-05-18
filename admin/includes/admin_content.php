@@ -30,13 +30,13 @@
                 //     echo $last_name   = $row['last_name'] . "<br/>";
                 // }
 
-                $found_user = User::find_user_by_id(1);
+                // $found_user = User::find_user_by_id(1);
 
-                $user = User::instantiation($found_user);
+                // $user = User::instantiation($found_user);
                 
-                echo $user->username;
-                echo $user->first_name;
-                echo $user->last_name;
+                // echo $user->username;
+                // echo $user->first_name;
+                // echo $user->last_name;
                 
 
             
