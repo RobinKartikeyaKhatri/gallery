@@ -10,13 +10,15 @@
 
             <?php
 
-                $query = "SELECT * FROM users";
+                // $query = "SELECT * FROM users";
 
-                $result = $database->query($query);
-                while($row = mysqli_fetch_array($result))
-                {
-                    echo $username = $row['username'];
-                }
+                // $result = $database->query($query);
+                // while($row = mysqli_fetch_array($result))
+                // {
+                //     echo $username = $row['username'];
+                // }
+
+                
 
 
 
