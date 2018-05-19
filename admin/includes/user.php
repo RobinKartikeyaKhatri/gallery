@@ -37,6 +37,14 @@ class User
 
     }
 
+    public static function verify_user($username, $password)
+    {
+        global $database;
+
+        $username = $database->escape_string($username);
+        $password = $database->escape_string($password);
+    }
+
     public static function instantiation($the_record)
     {
         $the_object = new self;
