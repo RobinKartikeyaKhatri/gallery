@@ -49,13 +49,14 @@
                 //     echo $user->last_name . "<br/>";
                 // }
 
-                $found_user = User::find_user_by_id(3);
+                // $found_user = User::find_user_by_id(3);
                 
-                echo $found_user->id . "<br/>";
-                echo $found_user->username . "<br/>";
-                echo $found_user->password . "<br/>";
-                echo $found_user->first_name . "<br/>";
-                echo $found_user->last_name . "<br/>";
+                // echo $found_user->id . "<br/>";
+                // echo $found_user->username . "<br/>";
+                // echo $found_user->password . "<br/>";
+                // echo $found_user->first_name . "<br/>";
+                // echo $found_user->last_name . "<br/>";
+                
                 
 
                 
