@@ -59,14 +59,31 @@
                 
                 
 
-                $user = new User();
+                // $user = new User();
 
-                $user->username = "raja";
-                $user->password = "sabdi";
-                $user->first_name = "Rohit";
-                $user->last_name = "Khatri";
+                // $user->username = "raja";
+                // $user->password = "sabdi";
+                // $user->first_name = "Rohit";
+                // $user->last_name = "Khatri";
 
-                $user->create();
+                // $user->create();
+
+                $found_user = User::find_user_by_id(2);
+                
+                $found_user->username = "lalsa" ;
+                $found_user->password = "lalsa";
+                $found_user->first_name = "Lalit";
+                $found_user->last_name = "Khatri";
+
+                $found_user->update();
+
+
+                
+                
+
+
+
+
 
             
                 
