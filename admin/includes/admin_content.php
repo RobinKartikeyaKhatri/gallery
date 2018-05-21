@@ -59,7 +59,14 @@
                 
                 
 
-                
+                $user = new User();
+
+                $user->username = "raja";
+                $user->password = "sabdi";
+                $user->first_name = "Rohit";
+                $user->last_name = "Khatri";
+
+                $user->create();
 
             
                 
