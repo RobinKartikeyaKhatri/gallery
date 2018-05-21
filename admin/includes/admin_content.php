@@ -49,21 +49,22 @@
                 //     echo $user->last_name . "<br/>";
                 // }
 
-                // $found_user = User::find_user_by_id(3);
+                $user= User::find_user_by_id(8);
                 
-                // echo $found_user->id . "<br/>";
-                // echo $found_user->username . "<br/>";
-                // echo $found_user->password . "<br/>";
-                // echo $found_user->first_name . "<br/>";
-                // echo $found_user->last_name . "<br/>";
+                $user->username = "jonti";
+                $user->password = "jonti";
+                $user->first_name = "Sunil";
+                $user->last_name = "Khatri";
+
+                $user->update();
                 
                 
 
                 // $user = new User();
 
-                // $user->username = "raja";
-                // $user->password = "sabdi";
-                // $user->first_name = "Rohit";
+                // $user->username = "rajkumar";
+                // $user->password = "rajkumar";
+                // $user->first_name = "Kushal";
                 // $user->last_name = "Khatri";
 
                 // $user->create();
