@@ -12,10 +12,10 @@
 
                 // $user = new User();
 
-                // $user->username = "lala";
-                // $user->password = "lala";
-                // $user->first_name = "Lal";
-                // $user->last_name = "Singh";
+                // $user->username = "ladi";
+                // $user->password = "ladi";
+                // $user->first_name = "Neeraj";
+                // $user->last_name = "Khatri";
 
                 // $user->create();
 
@@ -58,14 +58,14 @@
                 //     echo $user->last_name . "<br/>";
                 // }
 
-                $user= User::find_user_by_id(12);
+                // $user= User::find_user_by_id(13);
                 
-                $user->username = "pastam";
-                $user->password = "pastam";
-                $user->first_name = "Purshotam";
-                $user->last_name = "Singh Bhati";
+                // $user->username = "madan";
+                // $user->password = "madan";
+                // $user->first_name = "Murli Manohar";
+                // $user->last_name = "Khatri";
 
-                $user->update();
+                // $user->update();
                 
                 
 
