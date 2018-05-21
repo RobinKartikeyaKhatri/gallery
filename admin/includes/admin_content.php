@@ -68,9 +68,19 @@
 
                 // $user->create();
 
-                $found_user = User::find_user_by_id(5);
+                // $found_user = User::find_user_by_id(5);
 
-                $found_user->delete();
+                // $found_user->delete();
+
+                // $user = User::find_user_by_id(5);
+
+                // $user->username = "jonti";
+
+                // $user->save();
+
+                // $user = new User();
+                // $user->username = "robin";
+                // $user->save();
 
 
                 
