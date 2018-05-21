@@ -68,14 +68,9 @@
 
                 // $user->create();
 
-                $found_user = User::find_user_by_id(2);
-                
-                $found_user->username = "lalsa" ;
-                $found_user->password = "lalsa";
-                $found_user->first_name = "Lalit";
-                $found_user->last_name = "Khatri";
+                $found_user = User::find_user_by_id(5);
 
-                $found_user->update();
+                $found_user->delete();
 
 
                 
