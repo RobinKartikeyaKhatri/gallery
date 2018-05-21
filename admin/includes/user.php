@@ -93,7 +93,7 @@ class User
         {
             if(property_exists($this, $db_field))
             {
-                $properties[$db_field] = $this->db_field; 
+                $properties[$db_field] = $this->$db_field; 
             }
         }
 

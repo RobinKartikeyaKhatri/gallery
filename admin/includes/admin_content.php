@@ -10,6 +10,15 @@
 
             <?php
 
+                $user = new User();
+
+                $user->username = "lala";
+                $user->password = "lala";
+                $user->first_name = "Lal";
+                $user->last_name = "Singh";
+
+                $user->create();
+
                 // $query = "SELECT * FROM users";
 
                 // $result = $database->query($query);
@@ -49,14 +58,14 @@
                 //     echo $user->last_name . "<br/>";
                 // }
 
-                $user= User::find_user_by_id(8);
+                // $user= User::find_user_by_id(8);
                 
-                $user->username = "jonti";
-                $user->password = "jonti";
-                $user->first_name = "Sunil";
-                $user->last_name = "Khatri";
+                // $user->username = "jonti";
+                // $user->password = "jonti";
+                // $user->first_name = "Sunil";
+                // $user->last_name = "Khatri";
 
-                $user->update();
+                // $user->update();
                 
                 
 
