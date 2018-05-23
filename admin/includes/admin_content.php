@@ -12,9 +12,9 @@
 
                 // $user = new User();
 
-                // $user->username = "ladi";
-                // $user->password = "ladi";
-                // $user->first_name = "Neeraj";
+                // $user->username = "ram";
+                // $user->password = "ram";
+                // $user->first_name = "Arnav";
                 // $user->last_name = "Khatri";
 
                 // $user->create();
@@ -24,7 +24,7 @@
                 // $result = $database->query($query);
                 // while($row = mysqli_fetch_array($result))
                 // {
-                //     echo $username = $row['username'];
+                //     echo $username = $row['username'] . "<br/>";
                 // }
 
                 
@@ -39,7 +39,7 @@
                 //     echo $last_name   = $row['last_name'] . "<br/>";
                 // }
 
-                // $found_user = User::find_user_by_id(1);
+                // $found_user = User::find_by_id(2);
 
                 // $user = User::instantiation($found_user);
                 
@@ -47,7 +47,7 @@
                 // echo $user->first_name;
                 // echo $user->last_name;
 
-                // $users = User::find_all_users();
+                // $users = User::find_all();
 
                 // foreach ($users as $user) 
                 // {
@@ -58,10 +58,10 @@
                 //     echo $user->last_name . "<br/>";
                 // }
 
-                // $user= User::find_user_by_id(13);
+                // $user= User::find_by_id(16);
                 
-                // $user->username = "madan";
-                // $user->password = "madan";
+                // $user->username = "sambhu";
+                // $user->password = "sambhu";
                 // $user->first_name = "Murli Manohar";
                 // $user->last_name = "Khatri";
 
@@ -78,7 +78,7 @@
 
                 // $user->create();
 
-                // $found_user = User::find_user_by_id(5);
+                // $found_user = User::find_by_id(17);
 
                 // $found_user->delete();
 
@@ -91,21 +91,6 @@
                 // $user = new User();
                 // $user->username = "robin";
                 // $user->save();
-
-
-                
-                
-
-
-
-
-
-            
-                
-
-
-
-            
             ?>
 
             <ol class="breadcrumb">
