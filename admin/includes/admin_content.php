@@ -99,17 +99,20 @@
                 //     echo $photo->title;
                 // }
 
-                $photo = new Photo();
+                // $photo = new Photo();
 
                 
-                $photo->title = "Student";
-                $photo->description = "Student group photograph";
-                $photo->filename = "student.jpg";
-                $photo->type = "png";
-                $photo->size = "12";
+                // $photo->title = "Student";
+                // $photo->description = "Student group photograph";
+                // $photo->filename = "student.jpg";
+                // $photo->type = "png";
+                // $photo->size = "12";
 
 
-                $photo->create();
+                // $photo->create();
+
+                echo INCLUDES_PATH . "<br/>";
+                echo SITE_ROOT;
 
 
 
