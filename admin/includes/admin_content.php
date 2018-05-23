@@ -47,16 +47,16 @@
                 // echo $user->first_name;
                 // echo $user->last_name;
 
-                // $users = User::find_all();
+                $users = User::find_all();
 
-                // foreach ($users as $user) 
-                // {
-                //     echo $user->id . "<br/>";
-                //     echo $user->username . "<br/>";
-                //     echo $user->password . "<br/>";
-                //     echo $user->first_name . "<br/>";
-                //     echo $user->last_name . "<br/>";
-                // }
+                foreach ($users as $user) 
+                {
+                    echo $user->id . "<br/>";
+                    echo $user->username . "<br/>";
+                    echo $user->password . "<br/>";
+                    echo $user->first_name . "<br/>";
+                    echo $user->last_name . "<br/>";
+                }
 
                 // $user= User::find_by_id(16);
                 
