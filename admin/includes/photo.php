@@ -41,7 +41,7 @@ class Photo extends Db_object
         else
         {
             $this->filename = basename($file['name']);
-            $this->tmp_path = $file['tmp_path'];
+            $this->tmp_path = $file['tmp_name'];
             $this->type     = $file['type'];
             $this->size     = $file['size'];
         }
