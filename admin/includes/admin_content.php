@@ -47,16 +47,16 @@
                 // echo $user->first_name;
                 // echo $user->last_name;
 
-                $users = User::find_all();
+                // $users = User::find_all();
 
-                foreach ($users as $user) 
-                {
-                    echo $user->id . "<br/>";
-                    echo $user->username . "<br/>";
-                    echo $user->password . "<br/>";
-                    echo $user->first_name . "<br/>";
-                    echo $user->last_name . "<br/>";
-                }
+                // foreach ($users as $user) 
+                // {
+                //     echo $user->id . "<br/>";
+                //     echo $user->username . "<br/>";
+                //     echo $user->password . "<br/>";
+                //     echo $user->first_name . "<br/>";
+                //     echo $user->last_name . "<br/>";
+                // }
 
                 // $user= User::find_by_id(16);
                 
@@ -69,14 +69,14 @@
                 
                 
 
-                // $user = new User();
+                $user = new User();
 
-                // $user->username = "rajkumar";
-                // $user->password = "rajkumar";
-                // $user->first_name = "Kushal";
-                // $user->last_name = "Khatri";
+                $user->username = "amed";
+                $user->password = "amed";
+                $user->first_name = "Ummed Singh";
+                $user->last_name = "Bhati";
 
-                // $user->create();
+                $user->create();
 
                 // $found_user = User::find_by_id(17);
 
