@@ -69,14 +69,14 @@
                 
                 
 
-                $user = new User();
+                // $user = new User();
 
-                $user->username = "amed";
-                $user->password = "amed";
-                $user->first_name = "Ummed Singh";
-                $user->last_name = "Bhati";
+                // $user->username = "amed";
+                // $user->password = "amed";
+                // $user->first_name = "Ummed Singh";
+                // $user->last_name = "Bhati";
 
-                $user->create();
+                // $user->create();
 
                 // $found_user = User::find_by_id(17);
 
@@ -91,6 +91,28 @@
                 // $user = new User();
                 // $user->username = "robin";
                 // $user->save();
+
+                // $photos = Photo::find_all();
+
+                // foreach ($photos as $photo) 
+                // {
+                //     echo $photo->title;
+                // }
+
+                $photo = new Photo();
+
+                
+                $photo->title = "Student";
+                $photo->description = "Student group photograph";
+                $photo->filename = "student.jpg";
+                $photo->type = "png";
+                $photo->size = "12";
+
+
+                $photo->create();
+
+
+
             ?>
 
             <ol class="breadcrumb">
