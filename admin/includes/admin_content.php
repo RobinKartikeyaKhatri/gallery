@@ -111,8 +111,8 @@
 
                 // $photo->create();
 
-                echo INCLUDES_PATH . "<br/>";
-                echo SITE_ROOT;
+                // echo INCLUDES_PATH . "<br/>";
+                // echo SITE_ROOT;
 
 
 
