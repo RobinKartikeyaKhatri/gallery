@@ -20,14 +20,45 @@
                                 Photos
                                 <small>Subheading</small>
                             </h1>
-                            <ol class="breadcrumb">
-                                <li>
-                                    <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
-                                </li>
-                                <li class="active">
-                                    <i class="fa fa-file"></i> Blank Page
-                                </li>
-                            </ol>
+
+                            <div class="col-md-12">
+                                <table class="table table-responsive table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Photo</th>
+                                            <th>ID</th>
+                                            <th>Filename</th>
+                                            <th>Title</th>
+                                            <th>Size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+
+                                            <?php
+                                            
+                                               $photos = Photo::find_all();
+
+                                               foreach ($photos as $photo) 
+                                               {
+                                                   
+                                            ?>
+                                                   <tr>
+                                                   <td><?php echo $photo->photo_id; ?></td>
+                                                   <td><?php echo $photo->title; ?></td>
+                                                   <td><?php echo $photo->description; ?></td>
+                                                   <td><?php echo $photo->filename; ?></td>
+                                                   <td><?php echo $photo->type; ?></td>
+                                                   <td><?php echo $photo->size; ?></td>
+                                            <?php
+                                               }
+                                            ?>
+
+                                                   </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </div>
                     </div>
                     <!-- /.row -->
