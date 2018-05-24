@@ -13,8 +13,8 @@
                 // $user = User::find_by_id(19);
                 // echo $user->username;
 
-                $photo = Photo::find_by_id(9);
-                echo $photo->filename;
+                // $photo = Photo::find_by_id(9);
+                // echo $photo->filename;
 
                 // $user = new User();
 
