@@ -27,6 +27,8 @@ else
            $photo->caption          = $_POST['caption'];
            $photo->alternate_text   = $_POST['alternate_text'];
            $photo->description      = $_POST['description'];
+
+           $photo->save();
         }
     }
 }
@@ -56,7 +58,7 @@ else
                                 <small>Subheading</small>
                             </h1>
 
-                            <form action="edit_photo.php" method="post" enctype="multipart/form-data">
+                            <form action="" method="post">
 
                             <div class="col-md-8">
                                 
