@@ -55,7 +55,7 @@ $photos = Photo::find_all();
                                                    <td><img class="img-responsive" width="200" src="<?php echo $photo->picture_path(); ?>" alt="">
                                                         <div class="pictures_link">
                                                             <a href="delete_photo.php?id=<?php echo $photo->id; ?>" class="btn btn-danger">Delete</a>
-                                                            <a href="#" class="btn btn-warning">Edit</a>
+                                                            <a href="edit_photo.php?id=<?php echo $photo->id; ?>" class="btn btn-warning">Edit</a>
                                                             <a href="#" class="btn btn-success">View</a>
                                                         </div>
                                                    </td>
