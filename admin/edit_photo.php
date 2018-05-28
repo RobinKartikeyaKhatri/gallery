@@ -65,6 +65,10 @@ else
                                 <div class="form-group">
                                     <input type="text" name="title" class="form-control" value="<?php echo $photo->title; ?>">
                                 </div>
+                                
+                                <div class="form-group">
+                                    <a href="#"><img class="thumbnail img-responsive" width="400" src="<?php echo $photo->picture_path(); ?>" alt=""></a>
+                                </div>
 
                                 <div class="form-group">
                                     <label for="caption">Caption</label>
