@@ -52,7 +52,7 @@ $photos = Photo::find_all();
                                             <?php foreach ($photos as $photo) : ?>
 
                                                    <tr>
-                                                   <td><img class="img-responsive" width="200" src="<?php echo $photo->picture_path(); ?>" alt="">
+                                                   <td><img class="img-responsive thumbnail" width="200" src="<?php echo $photo->picture_path(); ?>" alt="">
                                                         <div class="pictures_link">
                                                             <a href="delete_photo.php?id=<?php echo $photo->id; ?>" class="btn btn-danger">Delete</a>
                                                             <a href="edit_photo.php?id=<?php echo $photo->id; ?>" class="btn btn-warning">Edit</a>
