@@ -60,7 +60,7 @@ $users = User::find_all();
                                                         <div class="action_links">
                                                             <a href="delete_user.php?id=<?php echo $user->id; ?>" class="btn btn-danger">Delete</a>
                                                             <a href="edit_user.php?id=<?php echo $user->id; ?>" class="btn btn-warning">Edit</a>
-                                                            <a href="#" class="btn btn-success">View</a>
+                                                            <!-- <a href="#" class="btn btn-success">View</a> -->
                                                         </div>
 
 
