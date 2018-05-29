@@ -36,12 +36,7 @@ class User extends Db_object
 
     public function save_user_and_image()
     {
-        if($this->id)
-        {
-            $this->update();
-        }
-        else
-        {
+        
             if(!empty($this->errors))
             {
                 return false;
@@ -74,7 +69,7 @@ class User extends Db_object
                 $this->errors[] = "The file directory probably does not have permission.";
                 return false;
             }
-        }
+        
     }
 
     public function image_path_and_placeholder()
