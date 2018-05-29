@@ -64,28 +64,32 @@ if(isset($_POST['update']))
                                 <small>Subheading</small>
                             </h1>
 
+                            <div class="col-md-6">
+                                <img class="img-responsive thumbnail" src="<?php echo $user->image_path_and_placeholder(); ?>" alt="">
+                            </div>
+
                             <form action="" method="post" enctype="multipart/form-data">
 
-                            <div class="col-md-6 col-md-offset-3">
+                            <div class="col-md-6">
                                 
                                 <div class="form-group">
                                     <label for="username">Username</label>
-                                    <input type="text" name="username" class="form-control" placeholder="Username">
+                                    <input type="text" name="username" class="form-control" placeholder="Username" value="<?php echo $user->username; ?>">
                                 </div>
                                 
                                 <div class="form-group">
                                     <label for="first_name">First Name</label>
-                                    <input type="text" name="first_name" class="form-control" placeholder="First Name">
+                                    <input type="text" name="first_name" class="form-control" placeholder="First Name" value="<?php echo $user->first_name; ?>">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="last_name">Last Name</label>
-                                    <input type="text" name="last_name" class="form-control" placeholder="Last Name">
+                                    <input type="text" name="last_name" class="form-control" placeholder="Last Name" value="<?php echo $user->last_name; ?>">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="password">Password</label>
-                                    <input type="password" name="password" class="form-control" placeholder="Password">
+                                    <input type="password" name="password" class="form-control" placeholder="Password" value="<?php echo $user->password; ?>">
                                 </div> 
 
                                 <div class="form-group">
@@ -93,7 +97,7 @@ if(isset($_POST['update']))
                                     <input type="file" name="user_image" class="form-control">
                                 </div> 
 
-                                <input type="submit" name="update" value="Create User" class="btn btn-primary pull-right">
+                                <input type="submit" name="update" value="Update User" class="btn btn-primary pull-right">
 
 
                                 
