@@ -26,6 +26,7 @@ if(!$session->is_signed_in())
             
             $user->set_file($_FILES['user_image']);
             $user->save_user_and_image();
+            $user->upload_photo();
         }
     }
 
