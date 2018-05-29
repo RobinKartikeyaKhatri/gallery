@@ -15,18 +15,18 @@ if(!$session->is_signed_in())
 
     // $user = user::find_by_id($_GET['id']);
 
-    // if(isset($_POST['update']))
-    // {
-    //     if($user)
-    //     {
-    //        $user->title            = $_POST['title'];
-    //        $user->caption          = $_POST['caption'];
-    //        $user->alternate_text   = $_POST['alternate_text'];
-    //        $user->description      = $_POST['description'];
+    if(isset($_POST['create']))
+    {
+        // if($user)
+        // {
+        //    $user->title            = $_POST['title'];
+        //    $user->caption          = $_POST['caption'];
+        //    $user->alternate_text   = $_POST['alternate_text'];
+        //    $user->description      = $_POST['description'];
 
-    //        $user->save();
-    //     }
-    // }
+        //    $user->save();
+        // }
+    }
 
 
 
@@ -56,7 +56,7 @@ if(!$session->is_signed_in())
 
                             <form action="" method="post" enctype="multipart/form-data">
 
-                            <div class="col-md-8">
+                            <div class="col-md-6 col-md-offset-3">
                                 
                                 <div class="form-group">
                                     <label for="username">Username</label>
@@ -78,12 +78,12 @@ if(!$session->is_signed_in())
                                     <input type="password" name="password" class="form-control" placeholder="Password">
                                 </div> 
 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="user_image">User Image</label>
                                     <input type="file" name="user_image" class="form-control">
-                                </div> 
+                                </div>  -->
 
-                                <input type="submit" name="submit" value="Create User" class="btn btn-primary">
+                                <input type="submit" name="create" value="Create User" class="btn btn-primary pull-right">
 
 
                                 
