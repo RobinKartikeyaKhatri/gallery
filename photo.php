@@ -16,12 +16,23 @@ if(isset($_POST['submit']))
 
     $new_comment = Comment::create_comment($photo->id, $author, $body);
 
-    if($new_comment)
+    if($new_comment && $new_comment->save())
     {
-        $new_comment->save();
         redirect("photo.php?id={$photo->id}");
     }
+    else
+    {
+        $message = "There was some problem saving.";
+    }
 }
+else
+{
+    $author = "";
+    $body = "";
+}
+
+$comments = Comment::find_the_comments($photo->id);
+
 
 ?>
 
