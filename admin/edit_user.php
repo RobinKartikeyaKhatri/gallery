@@ -110,6 +110,8 @@ if(isset($_POST['update']))
                                     <input type="file" name="user_image" class="form-control">
                                 </div> 
 
+                                <a href="delete_user.php?id=<?php echo $user->id; ?>" class="btn btn-danger">Delete User</a>
+
                                 <input type="submit" name="update" value="Update User" class="btn btn-primary pull-right">
 
 
