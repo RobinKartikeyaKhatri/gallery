@@ -23,7 +23,9 @@ if(!$session->is_signed_in())
             $user->first_name = $_POST['first_name'];
             $user->last_name  = $_POST['last_name'];
             $user->password   = $_POST['password'];
-            $user->save();
+            
+            $user->set_file($_FILES['user_image']);
+            $user->save_user_and_image();
         }
     }
 
