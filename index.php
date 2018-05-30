@@ -50,7 +50,7 @@ $photos = Photo::find_by_query($sql);
                       {
                           if($paginate->has_next())
                           {
-                            echo "<li class='next'><a href=''>Next</a></li>";
+                            echo "<li class='next'><a href='index.php?page={$paginate->next()}'>Next</a></li>";
                           }
                       }
                     
