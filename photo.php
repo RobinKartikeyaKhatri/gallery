@@ -41,6 +41,9 @@ $comments = Comment::find_the_comments($photo->id);
 
 
             <!-- Blog Post Content Column -->
+            <div class="row">
+
+            
             <div class="col-lg-12">
 
                 <!-- Blog Post -->
@@ -123,6 +126,7 @@ $comments = Comment::find_the_comments($photo->id);
 
         </div>
         <!-- /.row -->
+        </div>
 
         <?php include("includes/footer.php"); ?>
 
