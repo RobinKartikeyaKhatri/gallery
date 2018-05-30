@@ -42,7 +42,7 @@ $photos = Photo::find_by_query($sql);
                 </div>
 
                 <div class="row">
-                  <ul class="pager">
+                  <ul class="pagination">
                     
                     <?php
                     
