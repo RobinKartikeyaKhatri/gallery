@@ -27,7 +27,7 @@ $(document).ready(function(){
             success: function(data){
                 if(!data.error)
                 {
-                    alert(image_name);
+                    
                 }
             }
         });
