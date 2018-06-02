@@ -43,6 +43,7 @@ $comments = Comment::find_the_comments($_GET['id']);
                                 <small>Subheading</small>
                             </h1>
                             
+                            <p class="bg-danger text-center"><?php echo $message; ?></p>
 
                             <div class="col-md-12">
                                 <table class="table table-responsive table-hover">
