@@ -82,4 +82,7 @@
   
   }
   
-   
+/* Login Form Styles */
+#login-id label {
+  color: white;
+}
