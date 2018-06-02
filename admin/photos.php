@@ -36,6 +36,8 @@ $photos = Photo::find_all();
                                 <small></small>
                             </h1>
 
+                            <p class="bg-danger text-center"><?php echo $message; ?></p>
+
                             <div class="col-md-12">
                                 <table class="table table-responsive table-hover">
                                     <thead>

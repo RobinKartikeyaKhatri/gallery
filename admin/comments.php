@@ -35,6 +35,8 @@ $comments = Comment::find_all();
                                 Comments
                                 <small></small>
                             </h1>
+
+                            <p class="bg-danger text-center"><?php echo $message; ?></p>
                             
 
                             <div class="col-md-12">
