@@ -57,7 +57,7 @@ $photos = Photo::find_all();
                                                    <tr>
                                                    <td><img class="img-responsive thumbnail" width="200" src="<?php echo $photo->picture_path(); ?>" alt="">
                                                         <div class="action_links">
-                                                            <a href="delete_photo.php?id=<?php echo $photo->id; ?>" class="btn btn-danger">Delete</a>
+                                                            <a class="btn btn-danger delete_link" href="delete_photo.php?id=<?php echo $photo->id; ?>" class="btn btn-danger">Delete</a>
                                                             <a href="edit_photo.php?id=<?php echo $photo->id; ?>" class="btn btn-warning">Edit</a>
                                                             <a href="../photo.php?id=<?php echo $photo->id; ?>" class="btn btn-success">View</a>
                                                         </div>
