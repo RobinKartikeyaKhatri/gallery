@@ -47,6 +47,12 @@ $(document).ready(function(){
         });
     });
 
+    // Edit Photo Sidebar
+    $(".info-box-header").click(function(){
+        $(".inside").slideToggle("fast");
+        $("#toggle").toggleClass("glyphicon-menu-down glyphicon , glyphicon-menu-up glyphicon ");
+    });
+
 
 
     tinymce.init({ selector:'textarea' });
