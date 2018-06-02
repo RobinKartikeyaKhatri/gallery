@@ -11,12 +11,12 @@
 
 $message = "";
 
-if(isset($_POST['submit']))
+if(isset($_FILES['file']))
 {
     $photo = new Photo();
 
     $photo->title = $_POST['title'];
-    $photo->set_file($_FILES['file_upload']);
+    $photo->set_file($_FILES['file']);
 
     if($photo->save())
     {
@@ -65,7 +65,7 @@ if(isset($_POST['submit']))
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="file" name="file_upload" class="form-control">
+                                        <input type="file" name="file" class="form-control">
                                     </div>
 
                                     <input type="submit" value="Upload" name="submit" class="btn btn-primary">
@@ -78,7 +78,7 @@ if(isset($_POST['submit']))
 
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form action="upload.php" class="dropzone" method="post">
+                                    <form action="upload.php" class="dropzone">
                                         
                                     </form>
                                 </div>
