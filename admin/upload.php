@@ -52,6 +52,8 @@ if(isset($_POST['submit']))
                                 <small></small>
                             </h1>
 
+                            <div class="row">
+
                             <div class="col-md-6">
 
                             <?php echo $message; ?>
@@ -70,6 +72,16 @@ if(isset($_POST['submit']))
 
                                 </form>
 
+                            </div>
+
+                            </div><!-- row ends here -->
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form action="upload.php" class="dropzone" method="post">
+                                        
+                                    </form>
+                                </div>
                             </div>
 
                         </div>
